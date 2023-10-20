@@ -1,0 +1,437 @@
+{
+  "id": "d228ac3b-82b1-4ad5-b7ad-6eb5eabfcc59",
+  "version": "2.0",
+  "name": "assignment3",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "b596ac4c-3738-4d98-8163-c637de12f676",
+    "name": "addbooking",
+    "commands": [{
+      "id": "d6301242-d0fa-4998-83eb-721143a46cb5",
+      "comment": "",
+      "command": "open",
+      "target": "/bookaroom/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37b0236b-1d8c-4b52-9a8b-e02fcae56da8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "860x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d31c4be0-2499-4215-bb82-8d640ce0608d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu > li:nth-child(3) > a",
+      "targets": [
+        ["css=#menu > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Booking')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bookaroom/bookinglisting.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e939cb0a-3997-43a3-a78a-fba8bf8d4d6e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=[Book a Room]",
+      "targets": [
+        ["linkText=[Book a Room]", "linkText"],
+        ["css=h2 > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'[Book a Room]')]", "xpath:link"],
+        ["xpath=//div[@id='content']/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'makeabooking.php')]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'[Book a Room]')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c326d42a-e868-49ea-acf1-6133e5ca12c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=room",
+      "targets": [
+        ["id=room", "id"],
+        ["name=room", "name"],
+        ["css=#room", "css:finder"],
+        ["xpath=//select[@id='room']", "xpath:attributes"],
+        ["xpath=//div[@id='site_content']/form/p/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81fb2a44-d066-4ab4-a38a-3561e0154940",
+      "comment": "",
+      "command": "select",
+      "target": "id=room",
+      "targets": [],
+      "value": "label=Sonya S 5"
+    }, {
+      "id": "bce645fd-ef8a-46d2-ad25-342fe71c3b1b",
+      "comment": "",
+      "command": "click",
+      "target": "id=customer",
+      "targets": [
+        ["id=customer", "id"],
+        ["name=customer", "name"],
+        ["css=#customer", "css:finder"],
+        ["xpath=//select[@id='customer']", "xpath:attributes"],
+        ["xpath=//div[@id='site_content']/form/p[2]/select", "xpath:idRelative"],
+        ["xpath=//p[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72762610-50e4-416f-acdd-d117d36d9616",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkin",
+      "targets": [
+        ["id=checkin", "id"],
+        ["name=checkin", "name"],
+        ["css=#checkin", "css:finder"],
+        ["xpath=//input[@id='checkin']", "xpath:attributes"],
+        ["xpath=//div[@id='site_content']/form/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cecb7c4-3ac2-4288-b513-19c6e6c8d876",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=29",
+      "targets": [
+        ["linkText=29", "linkText"],
+        ["css=.ui-state-hover", "css:finder"],
+        ["xpath=//a[contains(text(),'29')]", "xpath:link"],
+        ["xpath=//div[@id='ui-datepicker-div']/table/tbody/tr[5]/td[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[29]", "xpath:href"],
+        ["xpath=//tr[5]/td[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'29')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ffd7810-7d3c-4401-b186-54a81690a2df",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkout",
+      "targets": [
+        ["id=checkout", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkout", "css:finder"],
+        ["xpath=//input[@id='checkout']", "xpath:attributes"],
+        ["xpath=//div[@id='site_content']/form/p[4]/input", "xpath:idRelative"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fb45464-51b3-4976-ad6d-0ae3329dbde3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=30",
+      "targets": [
+        ["linkText=30", "linkText"],
+        ["css=.ui-state-hover", "css:finder"],
+        ["xpath=//a[contains(text(),'30')]", "xpath:link"],
+        ["xpath=//div[@id='ui-datepicker-div']/table/tbody/tr[5]/td[7]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[30]", "xpath:href"],
+        ["xpath=//tr[5]/td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'30')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22fa02d6-a9e2-40fd-9c93-14554d14c7d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=contactnumber",
+      "targets": [
+        ["id=contactnumber", "id"],
+        ["name=contactnumber", "name"],
+        ["css=#contactnumber", "css:finder"],
+        ["xpath=//input[@id='contactnumber']", "xpath:attributes"],
+        ["xpath=//div[@id='site_content']/form/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2dfa143-3d20-4a71-a2fe-02768aa7d1bf",
+      "comment": "",
+      "command": "type",
+      "target": "id=contactnumber",
+      "targets": [
+        ["id=contactnumber", "id"],
+        ["name=contactnumber", "name"],
+        ["css=#contactnumber", "css:finder"],
+        ["xpath=//input[@id='contactnumber']", "xpath:attributes"],
+        ["xpath=//div[@id='site_content']/form/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": "123-123-1234"
+    }, {
+      "id": "80ebb104-f5b5-4f37-bef4-f7a46583b0d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=extra",
+      "targets": [
+        ["id=extra", "id"],
+        ["name=extra", "name"],
+        ["css=#extra", "css:finder"],
+        ["xpath=//textarea[@id='extra']", "xpath:attributes"],
+        ["xpath=//div[@id='site_content']/form/p[6]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcfefcc8-6858-48c5-8a33-66208f45d7d6",
+      "comment": "",
+      "command": "type",
+      "target": "id=extra",
+      "targets": [
+        ["id=extra", "id"],
+        ["name=extra", "name"],
+        ["css=#extra", "css:finder"],
+        ["xpath=//textarea[@id='extra']", "xpath:attributes"],
+        ["xpath=//div[@id='site_content']/form/p[6]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "spa"
+    }, {
+      "id": "b3ca8e21-0406-414b-8d9d-ce6bd32703c2",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=p > .submit", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='site_content']/form/p[7]/input", "xpath:idRelative"],
+        ["xpath=//p[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e587c80-c315-46a4-9065-f5fca37d1892",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=[Return to the booking listing]",
+      "targets": [
+        ["linkText=[Return to the booking listing]", "linkText"],
+        ["css=h2 > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'[Return to the booking listing]')]", "xpath:link"],
+        ["xpath=//div[@id='site_content']/h2/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'bookinglisting.php')])[2]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'[Return to the booking listing]')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "045ebee0-69f7-4ff8-98ee-648d29e9f207",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) a:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(5) a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'[view]')])[5]", "xpath:link"],
+        ["xpath=//div[@id='content']/table/tbody/tr[5]/td[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'bookingdetails.php?id=21')]", "xpath:href"],
+        ["xpath=//tr[5]/td[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0969aee-dcaa-499b-a9ab-ca4d50dc8fb7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=[Return to the booking listing]",
+      "targets": [
+        ["linkText=[Return to the booking listing]", "linkText"],
+        ["css=h2 > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'[Return to the booking listing]')]", "xpath:link"],
+        ["xpath=//div[@id='content']/h2/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'bookinglisting.php')])[2]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'[Return to the booking listing]')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "63783d95-1187-423b-8703-f0e4c4be0b71",
+    "name": "searchroom",
+    "commands": [{
+      "id": "64c099ac-ffde-4bd6-80e7-8efd91c921b4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9af71831-e4af-4b26-b659-d69cbb66aeb1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "860x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fb193e0-4eea-4e7f-ba6c-42cd4fcf1715",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2)",
+      "targets": [
+        ["css=td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/table[3]/tbody/tr/td[2]", "xpath:idRelative"],
+        ["xpath=//td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'2 - bookaroom')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22ea781b-4b47-4baf-a5d0-5713f1fcf104",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=bookaroom",
+      "targets": [
+        ["linkText=bookaroom", "linkText"],
+        ["css=td:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'bookaroom')]", "xpath:link"],
+        ["xpath=//div[@id='content']/table[3]/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'bookaroom')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'bookaroom')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win574",
+      "windowTimeout": 2000
+    }, {
+      "id": "03033dfe-9a67-4658-bc55-4e64f2abbc6a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win574}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7190cad2-2de5-4423-a879-8ea59c5551ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu > li:nth-child(3) > a",
+      "targets": [
+        ["css=#menu > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Booking')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bookaroom/bookinglisting.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2007a079-15ea-40df-af5e-32526af28d20",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=[Book a Room]",
+      "targets": [
+        ["linkText=[Book a Room]", "linkText"],
+        ["css=h2 > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'[Book a Room]')]", "xpath:link"],
+        ["xpath=//div[@id='content']/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'makeabooking.php')]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'[Book a Room]')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba9a9331-c18e-4ec9-9642-556d47ec44b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=from_date",
+      "targets": [
+        ["id=from_date", "id"],
+        ["name=sqa", "name"],
+        ["css=#from_date", "css:finder"],
+        ["xpath=//input[@id='from_date']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62b58437-f28e-4078-b410-49a095872a1e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=9",
+      "targets": [
+        ["linkText=9", "linkText"],
+        ["css=.ui-state-hover", "css:finder"],
+        ["xpath=//a[contains(text(),'9')]", "xpath:link"],
+        ["xpath=//div[@id='ui-datepicker-div']/table/tbody/tr[2]/td[7]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//tr[2]/td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'9')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cd94fbe-9595-4cf8-a9af-1656a9bfb144",
+      "comment": "",
+      "command": "click",
+      "target": "id=to_date",
+      "targets": [
+        ["id=to_date", "id"],
+        ["name=sqb", "name"],
+        ["css=#to_date", "css:finder"],
+        ["xpath=//input[@id='to_date']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input[2]", "xpath:idRelative"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44dd8004-fadf-44ea-92bf-943b6b876a71",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=31",
+      "targets": [
+        ["linkText=31", "linkText"],
+        ["css=.ui-state-hover", "css:finder"],
+        ["xpath=//a[contains(text(),'31')]", "xpath:link"],
+        ["xpath=//div[@id='ui-datepicker-div']/table/tbody/tr[6]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[31]", "xpath:href"],
+        ["xpath=//tr[6]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'31')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c0fd905-111d-4396-baa7-3848d8775991",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b6469b9-b5f6-4adb-87c3-c4322d9a5c62",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=[Return to the booking listing]",
+      "targets": [
+        ["linkText=[Return to the booking listing]", "linkText"],
+        ["css=h2 > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'[Return to the booking listing]')]", "xpath:link"],
+        ["xpath=//div[@id='site_content']/h2/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'bookinglisting.php')])[2]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'[Return to the booking listing]')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ba7d2481-626e-4fee-b231-c6a0996bf774",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b596ac4c-3738-4d98-8163-c637de12f676"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
